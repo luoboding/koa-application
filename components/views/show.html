@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ user.nickname }}{% endblock %}
+{% block content %}
+  <h4>用户信息old</h4>
+  <h1>account name: {{ user.account_name }}</h1>
+  <p>nickname: {{ user.nickname }}</p>
+  <p>password: {{ user.password }}</p>
+  <p>source: {{ user.source }}</p>
+  <p>sex: {{ user.sex }}</p>
+{% endblock %}

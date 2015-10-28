@@ -25,7 +25,6 @@ module.exports = function(app) {
         }).catch(function() {
           //login failed
         });
-
         return that.throw(200);
       }
       this.body = yield login;
